@@ -2,7 +2,9 @@
 
 
 This model can be used to predict the breeds of dogs. 
-I created a Rest api with Django Rest Framework that takes the input image in base64 and returns a jsonresponse having the breed and score predicted.
+Created a Rest api with Django Rest Framework that takes the input image in base64 and returns a jsonresponse having the breed and score predicted.
+If the breed of dog is not predicted with score greater than 0.7 then it will show the result and message that "The dog does not match with anyone in the database"
+
 The api is deployed to heroku: https://gb-dbc.herokuapp.com/dog_breed_api/
 I implemented the get method to the api in case the api is directly called in which case user can choose the image and upload it for prediction.
 
