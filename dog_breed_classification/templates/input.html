@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Dog Breed Classification</title>
+</head>
+<body>
+
+    <form method='post' action="{% url 'convert' %}" enctype='multipart/form-data' " >
+        {% csrf_token %}
+        <input type='file' name='image'>
+        <input type='submit' value='Submit'>
+    </form>
+
+</body>
